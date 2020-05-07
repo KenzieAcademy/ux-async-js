@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Async JavaScript</title>
-
     <script src="code.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <h1>Github User Search</h1>
-    <input placeholder="Search for a user" id="searchUser" />
-    <button id="searchButton">Search</button>
-    <hr />
-    <h2>Results</h2>
-    <div id="resultsContainer">No results</div>
-</body>
-
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/denisewrightdesigns-logo light copy.png" alt="" />
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search for a user"
+          class="main__input"
+          id="searchUser"
+          required
+        />
+        <button class="btn" id="searchButton">Search</button>
+      </div>
+    </header>
+    <div class="box">
+      <div class="inner__box">
+        <h1>Github User Search</h1>
+        <p class="main__subtitle">By: Denise Wright</p>
+        <div class="results__container">
+          <h2>Results</h2>
+          <div class="results" id="resultsContainer"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
