@@ -1,10 +1,51 @@
 * {
     font-family: helvetica, trebuchet, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-    
+img {
+    width: 100%;
+}  
 img.user_avatar {
     width: 40px;
     height: 40px;
     object-fit: cover;
     border-radius: 50%;
+}
+header {
+    background-color: orchid;
+}
+h1 {
+    text-align: center;
+}
+.srch {
+    margin-top: 1em;
+    text-align: center;
+}
+.btn {
+    text-align: center;
+    padding: 1em;
+}
+input {
+   width: 12em;
+   padding: .2em;
+   font-weight: bold;
+}
+button {
+    padding: .5em;
+    border-radius: 1em;
+    width: 6em;
+    font-weight: bold;
+    background-color: orchid;
+}
+h2 {
+    line-height: 2em;
+}
+.results__head {
+    margin: 1em;
+}
+#resultsContainer {
+    margin: .75em;
+    line-height: 2em;
 }
