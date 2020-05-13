@@ -11,12 +11,19 @@
 </head>
 
 <body>
-    <h1>Github User Search</h1>
-    <input placeholder="Search for a user" id="searchUser" />
-    <button id="searchButton">Search</button>
+    <header class="header">
+        <h1>Github User Search</h1>
+    </header>
+    <div class="srch">
+        <input type="text" placeholder="Search for a user" id="searchUser" required />
+    </div>
+    <div class="btn">
+        <button id="searchButton">Search</button>
+    </div>
     <hr />
-    <h2>Results</h2>
-    <div id="resultsContainer">No results</div>
+    <div class="results__head"><h2>Results</h2> 
+    </div>
+        <div id="resultsContainer">No Results</div>
 </body>
 
 </html>
