@@ -1,7 +1,15 @@
+
 window.onload = function () {
   // Run this once the page has loaded.
   // search
   const SEARCH_URL = "https://api.github.com/search/users?q=";
+
+window.onload = function () { // Run this once the page has loaded.
+    // search
+    document.querySelector("#searchButton").addEventListener("click", searchGithub);
+    function searchGithub() {
+        const url = "https://api.github.com/search/users?q="
+        const searchUserText = document.querySelector("#searchUser").value;
 
   document
     .querySelector("#searchButton")
@@ -32,8 +40,12 @@ window.onload = function () {
       <strong>${githubUser.login}</strong></a>`;
       html += "</li>";
     }
+
     html += "</ul>";
 
     document.querySelector("#resultsContainer").innerHTML = html;
   }
 };
+
+}
+
