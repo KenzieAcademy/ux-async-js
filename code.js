@@ -8,6 +8,16 @@ window.onload = function () { // Run this once the page has loaded.
         // Obtain a list of users from the Github API that match searchUserText
         //  The final result will contain an array under the key 'items'
         // Pass this array to `renderUserList`
+
+        fetch(url + searchUserText)
+            .then((resp) => resp.json())
+            .then(function(data) {
+                let users = data.results;
+                return renderUserList(users);
+            })
+            .catch(function(error) {
+                return console.log(error);
+            });
     }
 
     function renderUserList(githubUsers) {
