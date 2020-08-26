@@ -12,7 +12,8 @@ window.onload = function () { // Run this once the page has loaded.
         fetch(url + searchUserText)
             .then((resp) => resp.json())
             .then(function(data) {
-                let users = data.results;
+                console.log(data);
+                let users = data.items;
                 return renderUserList(users);
             })
             .catch(function(error) {
@@ -26,6 +27,7 @@ window.onload = function () { // Run this once the page has loaded.
         for (let i = 0; i < githubUsers.length; i++) {
             let githubUser = githubUsers[i];
             html += "<li>";
+            html += `<img src="${githubUser.avatar_url}">`;
             html += `<strong>${githubUser.login}</strong>`;
             html += `<a target="_blank" href="${githubUser.html_url}">`;
             html += "</li>";
