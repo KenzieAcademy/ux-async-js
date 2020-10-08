@@ -1,10 +1,11 @@
 * {
-    font-family: helvetica, trebuchet, sans-serif;
+  font-family: helvetica, trebuchet, sans-serif;
 }
-    
+
 img.user_avatar {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border: solid 0.3rem rgb(32, 117, 187);
+  border-radius: 50%;
 }
