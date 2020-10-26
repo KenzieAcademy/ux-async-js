@@ -10,10 +10,6 @@ window.onload = function () { // Run this once the page has loaded.
             let users = result.items;
             renderUserList(users);
         });
-
-        // Obtain a list of users from the Github API that match searchUserText
-        //  The final result will contain an array under the key 'items'
-        // Pass this array to `renderUserList`
     }
 
     function renderUserList(githubUsers) {
